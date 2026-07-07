@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PortfolioApi.Data;
 using PortfolioApi.Models;
 
@@ -13,6 +14,14 @@ namespace PortfolioApi.Controllers
         public ContactController(AppDbContext context)
         {
             _context = context;
+        }
+
+        // GET: api/contact
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<ContactMessage>>> GetMessages()
+        {
+            var messages = await _context.ContactMessages.ToListAsync();
+            return Ok(messages);
         }
 
         // POST: api/contact
@@ -31,3 +40,4 @@ namespace PortfolioApi.Controllers
         }
     }
 }
+
