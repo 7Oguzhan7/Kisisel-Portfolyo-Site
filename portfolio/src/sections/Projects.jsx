@@ -64,7 +64,8 @@ const Projects = () => {
                     <span key={i} className="tag">{tag}</span>
                   ))}
                 </div>
-                <a href={project.link} className="project-link">{lang === 'tr' ? 'İncele' : 'View Project'}</a>
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">{lang === 'tr' ? 'İncele' : 'View Project'}</a>
+
               </div>
             </div>
           ))}
