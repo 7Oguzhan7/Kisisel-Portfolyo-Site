@@ -64,7 +64,11 @@ const Projects = () => {
                     <span key={i} className="tag">{tag}</span>
                   ))}
                 </div>
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">{lang === 'tr' ? 'İncele' : 'View Project'}</a>
+                {project.link && project.link !== '#' && project.link.trim() !== '' && (
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                    {lang === 'tr' ? 'İncele' : 'View Project'}
+                  </a>
+                )}
 
               </div>
             </div>
