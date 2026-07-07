@@ -1,0 +1,27 @@
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using PortfolioApi.Data;
+using PortfolioApi.Models;
+
+namespace PortfolioApi.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class SkillsController : ControllerBase
+    {
+        private readonly AppDbContext _context;
+
+        public SkillsController(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        // GET: api/skills
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Skill>>> GetSkills()
+        {
+            var skills = await _context.Skills.ToListAsync();
+            return Ok(skills);
+        }
+    }
+}

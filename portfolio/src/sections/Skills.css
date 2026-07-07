@@ -1,0 +1,95 @@
+.skills-section {
+  padding: 5rem 0;
+}
+
+.skills-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 4rem;
+}
+
+.skill-category-card {
+  padding: 2.5rem 2rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  border-top: 3px solid transparent;
+}
+
+.skill-category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(139, 92, 246, 0.15);
+  border-top: 3px solid var(--accent-color);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.category-icon {
+  font-size: 2rem;
+  background: var(--surface-highlight);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.category-header h3 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.skills-tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-tag-modern {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--surface-color);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  cursor: default;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='light'] .skill-tag-modern {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.skill-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.skill-tag-modern:hover {
+  transform: translateY(-4px) scale(1.05);
+  border-color: var(--hover-color);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: var(--hover-color);
+}
+
+[data-theme='light'] .skill-tag-modern:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
