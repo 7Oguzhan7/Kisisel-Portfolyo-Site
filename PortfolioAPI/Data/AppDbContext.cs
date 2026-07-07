@@ -28,7 +28,7 @@ namespace PortfolioApi.Data
                     DescriptionTr = "PHP ve CodeIgniter 4 ile geliştirilen; kitap yönetimi, kullanıcı rezervasyonu ve kapsamlı admin paneli içeren tam donanımlı kütüphane yönetim sistemi. Ekip projesi olarak geliştirildi.",
                     DescriptionEn = "A full-featured library management system built with PHP and CodeIgniter 4, featuring book management, user reservations, and a comprehensive admin panel. Developed as a team project.",
                     Technologies = "PHP, CodeIgniter 4, MySQL, JavaScript",
-                    GitHubUrl = "https://github.com/7Oguzhan7/grup-proje",
+                    GitHubUrl = "https://github.com/7Oguzhan7/Akilli-kutuphane-ve-rezervasyon-sistemi",
                     DemoUrl = "",
                     ImageUrl = ""
                 },
@@ -40,7 +40,7 @@ namespace PortfolioApi.Data
                     DescriptionTr = "React ve ASP.NET Core Web API kullanılarak geliştirilen, SQLite veritabanı ile dinamik içerik yönetimi sağlayan modern kişisel portfolyo sitesi.",
                     DescriptionEn = "A modern personal portfolio website built with React and ASP.NET Core Web API, featuring dynamic content management via a SQLite database.",
                     Technologies = "React, ASP.NET Core, SQLite, CSS",
-                    GitHubUrl = "",
+                    GitHubUrl = "https://github.com/7Oguzhan7/Kisisel-Portfolyo-Site",
                     DemoUrl = "",
                     ImageUrl = ""
                 }
